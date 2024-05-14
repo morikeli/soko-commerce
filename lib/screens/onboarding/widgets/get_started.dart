@@ -22,7 +22,7 @@ class _GetStartedButtonState extends State<GetStartedButton> {
     width: MediaQuery.of(context).size.width * 0.9,
     height: 55,
     child: TextButton(
-      onPressed: () {}, 
+      onPressed: () => Navigator.pushNamed(context, LoginPage.routeName), 
       child: const Text(
         'Get started',
         style: TextStyle(
