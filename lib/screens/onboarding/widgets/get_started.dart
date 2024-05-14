@@ -1,16 +1,17 @@
 import 'package:e_commerce/constants/colors.dart';
+import 'package:e_commerce/screens/login/login.dart';
 import 'package:flutter/material.dart';
 
 
 // Get started button
-class GetStartedWidget extends StatefulWidget {
-  const GetStartedWidget({super.key});
+class GetStartedButton extends StatefulWidget {
+  const GetStartedButton({super.key});
 
   @override
-  State<GetStartedWidget> createState() => _GetStartedWidgetState();
+  State<GetStartedButton> createState() => _GetStartedButtonState();
 }
 
-class _GetStartedWidgetState extends State<GetStartedWidget> {
+class _GetStartedButtonState extends State<GetStartedButton> {
   @override
   Widget build(BuildContext context) {
     return Container(
