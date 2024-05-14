@@ -38,7 +38,7 @@ class _BodyState extends State<Body> {
 
       bottomSheet: Container(
         padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10.0),
-        child: isLastPage ? const GetStartedWidget() : Row(
+        child: isLastPage ? const GetStartedButton() : Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             // Skip button
