@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class OnboardingScreen extends StatelessWidget {
+  static String routeName = '/onboarding';
   const OnboardingScreen({super.key});
 
   @override
