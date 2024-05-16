@@ -40,7 +40,10 @@ class _LoginFormState extends State<LoginForm> {
               }),
               const Text('Remember me'),
               const Spacer(),
-              const Text('Forgot password?'),
+              GestureDetector(
+                onTap: () => Navigator.pushNamed(context, ForgotPasswordScreen.routeName),
+                child: const Text('Forgot password?'),
+              ),
             ],
           ),
           const SizedBox(height: 10.0),
