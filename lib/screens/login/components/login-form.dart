@@ -58,7 +58,7 @@ class _LoginFormState extends State<LoginForm> {
               },
               child: const Text('Login', style: TextStyle(color: kPrimaryLightColor),),
             ),
-          )
+          ),
         ],
       ),
     );
