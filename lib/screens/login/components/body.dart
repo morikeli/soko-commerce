@@ -35,7 +35,7 @@ class LoginScreenBody extends StatelessWidget {
                     const Text("Don't have an account?", style: TextStyle(fontSize: 16.0)),
                     const SizedBox(width: 5.0),
                     TextButton(
-                      onPressed: () => Navigator.pushNamed(context, ForgotPasswordScreen.routeName),
+                      onPressed: () {},
                       child: const Text(
                         'Sign up', 
                         style: TextStyle(
