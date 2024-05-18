@@ -1,5 +1,6 @@
 import 'package:e_commerce/constants/colors.dart';
 import 'package:e_commerce/screens/login/components/login_form.dart';
+import 'package:e_commerce/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 
 
@@ -34,7 +35,7 @@ class LoginScreenBody extends StatelessWidget {
                     const Text("Don't have an account?", style: TextStyle(fontSize: 16.0)),
                     const SizedBox(width: 5.0),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () => Navigator.pushNamed(context, SignupScreen.routeName),
                       child: const Text(
                         'Sign up', 
                         style: TextStyle(
