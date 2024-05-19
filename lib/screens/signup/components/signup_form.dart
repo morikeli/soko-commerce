@@ -41,10 +41,10 @@ class _SignupFormState extends State<SignupForm> {
           emailFormField(),
           const SizedBox(height: 15.0),
           passwordFormField(),
-          const SizedBox(height: 5.0),
+          const SizedBox(height: 15.0),
           confirmPasswordFormField(),
           FormErrorsWidget(errors: formErrors),
-          const SizedBox(height: 5.0),
+          const SizedBox(height: 15.0),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20.0),
