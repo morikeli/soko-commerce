@@ -155,7 +155,7 @@ class _SignupFormState extends State<SignupForm> {
       validator: (value) {
         if (value!.isEmpty) {
           addError(error: kemailNullError);
-        } else if (emailValidatorRegex.hasMatch(value)) {
+        } else if (!emailValidatorRegex.hasMatch(value)) {
           addError(error: kInvalidEmailError);
         }
         return null;
