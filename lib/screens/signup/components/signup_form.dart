@@ -119,7 +119,7 @@ class _SignupFormState extends State<SignupForm> {
         } else if (value.length >= 8) {
           removeError(error: kShortPasswordError);
         }
-        password = value;
+        password = value.toString();
       },
       onSaved: (newValue) => password = newValue.toString(),
       validator: (value) {
