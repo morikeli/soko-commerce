@@ -13,8 +13,8 @@ class SignupForm extends StatefulWidget {
 
 class _SignupFormState extends State<SignupForm> {
   final _formKey = GlobalKey<FormState>();
-  late String email, password, confirmPassword;
-  List<String> formErrors = [];
+  String? email, password, confirmPassword;
+  final List<String> formErrors = [];
 
   void addError({required String error}) {
     if (!formErrors.contains(error)) {
