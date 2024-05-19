@@ -52,7 +52,11 @@ class _SignupFormState extends State<SignupForm> {
             ),
             width: MediaQuery.of(context).size.width * .9,
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {
+                  _formKey.currentState!.save();
+                }
+              },
               child: const Text(
                 'Signup',
                 style: TextStyle(
