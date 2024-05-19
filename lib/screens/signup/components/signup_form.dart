@@ -43,6 +43,7 @@ class _SignupFormState extends State<SignupForm> {
           passwordFormField(),
           const SizedBox(height: 15.0),
           confirmPasswordFormField(),
+          const SizedBox(height: 10.0),
           FormErrorsWidget(errors: formErrors),
           const SizedBox(height: 15.0),
           Container(
