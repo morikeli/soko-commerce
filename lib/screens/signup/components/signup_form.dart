@@ -57,6 +57,9 @@ class _SignupFormState extends State<SignupForm> {
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
                   _formKey.currentState!.save();
+                  if (formErrors.isEmpty) {
+                    Navigator.pushNamed(context, OTPScreen.routeName);
+                  }
                 }
               },
               child: const Text(
