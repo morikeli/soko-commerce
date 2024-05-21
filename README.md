@@ -1,8 +1,7 @@
 # Soko commerce
 
 ## Demo
-![flutter_01](https://github.com/morikeli/soko-commerce/assets/78599959/723d5d34-6581-4493-8641-5d44ea120191)
-
+![flutter_01](https://github.com/morikeli/soko-commerce/assets/78599959/18a31683-11bf-4cce-aada-362e01ade852)
 
 ## Overview
 Soko commerce is an online shopping mobile application built with Flutter. The app runs on iOS and Android devices. Users can login, signup and view items in stock on their homepage.
