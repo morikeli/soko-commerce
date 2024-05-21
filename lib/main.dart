@@ -21,6 +21,17 @@ class MyApp extends StatelessWidget {
           elevation: 0,
           iconTheme: IconThemeData(color: Colors.black),
         ),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.white,
+          selectedIconTheme: IconThemeData(
+            color: kPrimaryColor,
+          ),
+          selectedItemColor: kTextColor,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          type: BottomNavigationBarType.fixed,
+          unselectedItemColor: kTextColor
+        ),
         colorScheme: ColorScheme.fromSeed(seedColor: kPrimaryColor),
         inputDecorationTheme: InputDecorationTheme(
           contentPadding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 12.0),
