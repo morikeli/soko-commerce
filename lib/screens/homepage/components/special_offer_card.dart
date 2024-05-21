@@ -17,7 +17,7 @@ class SpecialOfferCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      padding: const EdgeInsets.symmetric(horizontal: 6.0),
       child: SizedBox(
         width: MediaQuery.of(context).size.width * .6,
         height: MediaQuery.of(context).size.height * .2,
