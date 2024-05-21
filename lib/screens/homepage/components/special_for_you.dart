@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class SpecialForYouSection extends StatelessWidget {
-  const SpecialForYouSection({
+class HomepageSection extends StatelessWidget {
+  const HomepageSection({
     super.key, 
     required this.text, 
     required this.onPress,
