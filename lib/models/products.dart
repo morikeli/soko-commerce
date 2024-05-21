@@ -53,7 +53,6 @@ List<Product> productsOnSale = [
     ],
     productPrice: 3500.00,
     productRating: 4.5,
-    isFavorite: false,
     isPopular: true,
   ),
   Product(
@@ -87,7 +86,6 @@ List<Product> productsOnSale = [
     ],
     productPrice: 90000.00,
     productRating: 4.6,
-    isFavorite: false,
     isPopular: true,
   ),
   Product(
