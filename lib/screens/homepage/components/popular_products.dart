@@ -17,24 +17,27 @@ class PopularProducts extends StatelessWidget {
           onPress: () {}, 
         ),
         SizedBox(height: MediaQuery.of(context).size.height * .01),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                ...List.generate(
-                  productsOnSale.length, 
-                  (index) {
-                    if (productsOnSale[index].isPopular) {
-                      return ProductCard(product: productsOnSale[index]);
+        GestureDetector(
+          onTap: onPress,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ...List.generate(
+                    productsOnSale.length, 
+                    (index) {
+                      if (productsOnSale[index].isPopular) {
+                        return ProductCard(product: productsOnSale[index]);
+                      }
+                      
+                      return const SizedBox.shrink();
                     }
-                    
-                    return const SizedBox.shrink();
-                  }
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
         ),
