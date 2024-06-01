@@ -6,7 +6,10 @@ import 'package:flutter/material.dart';
 class PopularProducts extends StatelessWidget {
   const PopularProducts({
     super.key,
+    required this.onPress,
   });
+
+  final GestureTapCallback onPress;
 
   @override
   Widget build(BuildContext context) {
