@@ -2,7 +2,6 @@ import 'package:e_commerce/screens/homepage/components/discount_banner.dart';
 import 'package:e_commerce/screens/homepage/components/homepage_header.dart';
 import 'package:e_commerce/screens/homepage/components/popular_products.dart';
 import 'package:e_commerce/screens/homepage/components/special_offers.dart';
-import 'package:e_commerce/screens/product_details/product_details.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
