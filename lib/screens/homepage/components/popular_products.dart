@@ -1,15 +1,13 @@
 import 'package:e_commerce/models/products.dart';
 import 'package:e_commerce/screens/homepage/components/homepage_section.dart';
 import 'package:e_commerce/screens/homepage/components/product_card.dart';
+import 'package:e_commerce/screens/product_details/product_details.dart';
 import 'package:flutter/material.dart';
 
 class PopularProducts extends StatelessWidget {
   const PopularProducts({
     super.key,
-    required this.onPress,
   });
-
-  final GestureTapCallback onPress;
 
   @override
   Widget build(BuildContext context) {
