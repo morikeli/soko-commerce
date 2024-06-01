@@ -22,9 +22,7 @@ class HomepageBody extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * .02),            
             const SpecialOffersForYou(),
             SizedBox(height: MediaQuery.of(context).size.height * .02),
-            PopularProducts(
-              onPress: () => Navigator.pushNamed(context, ProductsDetailsScreen.routeName),
-            ),
+            PopularProducts(),
             SizedBox(height: MediaQuery.of(context).size.height * .02),
           ],
         ),
