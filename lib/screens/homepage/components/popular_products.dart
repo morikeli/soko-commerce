@@ -26,7 +26,13 @@ class PopularProducts extends StatelessWidget {
               children: [
                 ...List.generate(
                   productsOnSale.length, 
-                  (index) => ProductCard(product: productsOnSale[index])
+                  (index) {
+                    if (productsOnSale[index].isPopular) {
+                      return ProductCard(product: productsOnSale[index]);
+                    }
+                    
+                    return const SizedBox.shrink();
+                  }
                 )
               ],
             ),
