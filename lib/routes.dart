@@ -3,6 +3,7 @@ import 'package:e_commerce/screens/homepage/homepage.dart';
 import 'package:e_commerce/screens/login/login.dart';
 import 'package:e_commerce/screens/onboarding/onboarding_screen.dart';
 import 'package:e_commerce/screens/otp/otp.dart';
+import 'package:e_commerce/screens/product_details/product_details.dart';
 import 'package:e_commerce/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 
@@ -13,4 +14,5 @@ final Map<String, WidgetBuilder> routes = {
   SignupScreen.routeName: (context) => const SignupScreen(),
   OTPScreen.routeName: (context) => const OTPScreen(),
   Homepage.routeName: (context) => const Homepage(),
+  ProductsDetailsScreen.routeName: (context) => const ProductsDetailsScreen(),
 };
