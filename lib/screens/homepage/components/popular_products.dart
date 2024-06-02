@@ -29,11 +29,13 @@ class PopularProducts extends StatelessWidget {
                   productsOnSale.length, 
                   (index) {
                     if (productsOnSale[index].isPopular) {
+                      print('selected product: ${productsOnSale[index]}');
+                      print('Index: $index');
                       return ProductCard(
                         product: productsOnSale[index],
                         onPress: () => Navigator.pushNamed(
                           context, ProductsDetailsScreen.routeName,
-                          arguments: ProductID(product: productsOnSale[index]),
+                          arguments: SelectedProduct(product: productsOnSale[index]),
                         ),
                       );
                     }
