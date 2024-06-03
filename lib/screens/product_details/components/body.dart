@@ -14,18 +14,20 @@ class ProductsDetailsBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: MediaQuery.of(context).size.height * .3,
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Image.asset(selectedProduct.productImages[0]),
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * .3,
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(selectedProduct.productImages[0]),
+            ),
           ),
-        ),
-        ProductDescriptionSection(selectedProduct: selectedProduct),
-        const AddToCartButton(),
-      ],
+          ProductDescriptionSection(selectedProduct: selectedProduct),
+          const AddToCartButton(),
+        ],
+      ),
     );
   }
 }
