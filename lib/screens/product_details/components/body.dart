@@ -15,7 +15,7 @@ class ProductsDetailsBody extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          width: MediaQuery.of(context).size.height * .5,
+          height: MediaQuery.of(context).size.height * .3,
           child: AspectRatio(
             aspectRatio: 1,
             child: Image.asset(selectedProduct.productImages[0]),
