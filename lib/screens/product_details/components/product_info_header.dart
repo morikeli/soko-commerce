@@ -16,7 +16,7 @@ class ProductDetailsHeader extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20.0),
-              color: const Color(0xFFF6F6FC),
+              color: const Color(0xFFF5F6F9),
             ),
             // padding: const EdgeInsets.only(left: 10.0),
             child: IconButton(
@@ -27,7 +27,7 @@ class ProductDetailsHeader extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20.0),
-              color: const Color(0xFFF6F6FC),
+              color: const Color(0xFFF5F6F9),
             ),
             padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
             child: const Row(
