@@ -76,6 +76,20 @@ class ProductsDetailsBody extends StatelessWidget {
             ],
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 2.0),
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: kPrimaryColor,
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            child: TextButton(
+              onPressed: () {},
+              child: Text('Add to cart', style: TextStyle(color: kPrimaryLightColor)),
+            ),
+          ),
+        )
       ],
     );
   }
