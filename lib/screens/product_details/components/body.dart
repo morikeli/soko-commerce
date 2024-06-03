@@ -86,7 +86,7 @@ class ProductsDetailsBody extends StatelessWidget {
             ),
             child: TextButton(
               onPressed: () {},
-              child: Text('Add to cart', style: TextStyle(color: kPrimaryLightColor)),
+              child: const Text('Add to cart', style: TextStyle(color: kPrimaryLightColor)),
             ),
           ),
         )
