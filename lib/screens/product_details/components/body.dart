@@ -63,7 +63,15 @@ class ProductsDetailsBody extends StatelessWidget {
                     color: selectedProduct.isFavorite ? const Color(0xFFF44336) : const Color(0xFFDBDFF4),
                   ),
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+                child: Text(
+                  selectedProduct.productDescription,
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+              ),
+              ProductDotColor(selectedProduct: selectedProduct),
             ],
           ),
         ),
