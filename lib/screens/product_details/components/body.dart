@@ -23,73 +23,8 @@ class ProductsDetailsBody extends StatelessWidget {
             child: Image.asset(selectedProduct.productImages[0]),
           ),
         ),
-        Container(
-          padding: const EdgeInsets.only(top: 20.0),
-          margin: const EdgeInsets.only(top: 25.0),
-          height: 300.0,
-          width: double.infinity,
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40.0),
-              topRight: Radius.circular(40.0)
-            )
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * .25),
-                child: Text(
-                  selectedProduct.productName,
-                  maxLines: 2,
-                  softWrap: true,
-                  style: Theme.of(context).textTheme.titleLarge,
-                ),
-              ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: Container(
-                  width: MediaQuery.of(context).size.width * .17,
-                  decoration: BoxDecoration(
-                    borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(20.0),
-                      bottomLeft: Radius.circular(20.0),
-                    ),
-                    color: selectedProduct.isFavorite ? const Color(0xFFFFE6E6) : const Color(0xFFF5F6F9),
-                  ),
-                  padding: const EdgeInsets.all(15.0),
-                  child: Icon(
-                    Icons.favorite_sharp,
-                    color: selectedProduct.isFavorite ? const Color(0xFFF44336) : const Color(0xFFDBDFF4),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-                child: Text(
-                  selectedProduct.productDescription,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
-              ),
-              ProductDotColor(selectedProduct: selectedProduct),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 2.0),
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: kPrimaryColor,
-              borderRadius: BorderRadius.circular(20.0),
-            ),
-            child: TextButton(
-              onPressed: () {},
-              child: const Text('Add to cart', style: TextStyle(color: kPrimaryLightColor)),
-            ),
-          ),
-        )
+        ProductDescriptionSection(selectedProduct: selectedProduct),
+        const AddToCartButton(),
       ],
     );
   }
