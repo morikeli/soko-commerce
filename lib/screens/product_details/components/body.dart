@@ -1,6 +1,6 @@
-import 'package:e_commerce/constants/colors.dart';
 import 'package:e_commerce/models/products.dart';
-import 'package:e_commerce/screens/product_details/components/product_color_dot.dart';
+import 'package:e_commerce/screens/product_details/components/sections/add_to_cart.dart';
+import 'package:e_commerce/screens/product_details/components/sections/product_description.dart';
 import 'package:flutter/material.dart';
 
 
