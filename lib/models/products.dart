@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class Product {
+  final String itemID;
   final String productName, productDescription;
   final List<String> productImages;
   final List<Color> colors;
@@ -14,6 +15,7 @@ class Product {
     required this.productImages,
     required this.colors,
     required this.productPrice,
+    this.itemID = '1',
     this.productRating = 0.0,
     this.isFavorite = false,
     this.isPopular = false,
@@ -23,6 +25,7 @@ class Product {
 // demo products
 List<Product> productsOnSale = [
   Product(
+    itemID: '1',
     productName: 'Beats by Dre headphones',
     productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
@@ -40,6 +43,7 @@ List<Product> productsOnSale = [
     isPopular: true,
   ),
   Product(
+    itemID: '2',
     productName: 'PS5 Dualshock',
     productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
@@ -56,6 +60,7 @@ List<Product> productsOnSale = [
     isPopular: true,
   ),
   Product(
+    itemID: '3',
     productName: 'Sony soundbar',
     productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
@@ -73,6 +78,7 @@ List<Product> productsOnSale = [
     isPopular: true,
   ),
   Product(
+    itemID: '4',
     productName: 'Samsung S22 Ultra',
     productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
@@ -89,6 +95,7 @@ List<Product> productsOnSale = [
     isPopular: true,
   ),
   Product(
+    itemID: '5',
     productName: 'Apple TV',
     productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
