@@ -24,7 +24,7 @@ class Product {
 List<Product> productsOnSale = [
   Product(
     productName: 'Beats headphones',
-    productDescription: '',
+    productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
       'assets/img/items/beats-headphones.jpg',
     ],
@@ -41,7 +41,7 @@ List<Product> productsOnSale = [
   ),
   Product(
     productName: 'PS5 Dualshock',
-    productDescription: '',
+    productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
       'assets/img/items/ps5-dualshock.jpg',
     ],
@@ -57,7 +57,7 @@ List<Product> productsOnSale = [
   ),
   Product(
     productName: 'Sony soundbar',
-    productDescription: '',
+    productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
       'assets/img/items/sony-soundbar.jpg',
     ],
@@ -74,7 +74,7 @@ List<Product> productsOnSale = [
   ),
   Product(
     productName: 'Samsung S22 Ultra',
-    productDescription: '',
+    productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
       'assets/img/items/samsung.jpg',
     ],
@@ -90,7 +90,7 @@ List<Product> productsOnSale = [
   ),
   Product(
     productName: 'Apple TV',
-    productDescription: '',
+    productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
       'assets/img/items/tv.jpg',
     ],
