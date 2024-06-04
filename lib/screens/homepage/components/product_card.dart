@@ -57,6 +57,7 @@ class ProductCard extends StatelessWidget {
                     child: Icon(
                       Icons.favorite_outlined, 
                       color: product.isFavorite ? Colors.red : kSecondaryColor.withOpacity(.01),
+                      size: 18.0,
                     ),
                   ),
                 ],
