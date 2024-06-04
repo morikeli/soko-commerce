@@ -1,5 +1,6 @@
 import 'package:e_commerce/models/products.dart';
 import 'package:e_commerce/screens/product_details/components/product_color_dot.dart';
+import 'package:e_commerce/screens/product_details/components/widgets/add_remove_btns.dart';
 import 'package:flutter/material.dart';
 
 class ProductDescriptionSection extends StatelessWidget {
