@@ -37,23 +37,18 @@ class ProductCard extends StatelessWidget {
               ),
               Text(
                 product.productName,
-                maxLines: 2,
-                style: const TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black, overflow: TextOverflow.ellipsis),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(left: 15.0),
-                    child: Text(
-                      '${product.productPrice}0/=',
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: kPrimaryColor
-                      ),
-                      
+                  Text(
+                    '${product.productPrice}0/=',
+                    style: const TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: kPrimaryColor
                     ),
                   ),
                   InkWell(
