@@ -23,7 +23,7 @@ class Product {
 // demo products
 List<Product> productsOnSale = [
   Product(
-    productName: 'Beats headphones',
+    productName: 'Beats by Dre headphones',
     productDescription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, numquam omnis aspernatur illo tenetur beatae labore impedit eveniet, explicabo voluptates eaque sint qui odit error fugiat ex sunt asperiores quae.',
     productImages: [
       'assets/img/items/beats-headphones.jpg',
