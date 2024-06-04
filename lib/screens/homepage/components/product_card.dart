@@ -16,12 +16,13 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 14.0),
       child: GestureDetector(
         onTap: onPress,
         child: SizedBox(
           width: MediaQuery.of(context).size.width * .4,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AspectRatio(
                 aspectRatio: 1.02,
