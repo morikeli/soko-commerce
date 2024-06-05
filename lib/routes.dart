@@ -8,6 +8,7 @@ import 'package:e_commerce/screens/product_details/product_details.dart';
 import 'package:e_commerce/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 
+
 final Map<String, WidgetBuilder> routes = {
   OnboardingScreen.routeName: (context) => const OnboardingScreen(),
   LoginPage.routeName: (context) => const LoginPage(),
