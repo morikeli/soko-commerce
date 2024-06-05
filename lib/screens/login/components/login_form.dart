@@ -1,7 +1,7 @@
 import 'package:e_commerce/constants/colors.dart';
 import 'package:e_commerce/constants/errors.dart';
 import 'package:e_commerce/screens/forgot_password/forgot_password.dart';
-import 'package:e_commerce/screens/homepage/homepage.dart';
+import 'package:e_commerce/screens/otp/otp.dart';
 import 'package:flutter/material.dart';
 
 
@@ -59,7 +59,7 @@ class _LoginFormState extends State<LoginForm> {
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
                   _formKey.currentState!.save();
-                  Navigator.popAndPushNamed(context, Homepage.routeName);
+                  Navigator.popAndPushNamed(context, OTPScreen.routeName);
                 }
               },
               child: const Text('Login', style: TextStyle(color: kPrimaryLightColor),),

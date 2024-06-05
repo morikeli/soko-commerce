@@ -1,6 +1,6 @@
 import 'package:e_commerce/constants/colors.dart';
 import 'package:e_commerce/constants/errors.dart';
-import 'package:e_commerce/screens/otp/otp.dart';
+import 'package:e_commerce/screens/login/login.dart';
 import 'package:e_commerce/utils/errors.dart';
 import 'package:flutter/material.dart';
 
@@ -58,7 +58,7 @@ class _SignupFormState extends State<SignupForm> {
                 if (_formKey.currentState!.validate()) {
                   _formKey.currentState!.save();
                   if (formErrors.isEmpty) {
-                    Navigator.pushNamed(context, OTPScreen.routeName);
+                    Navigator.pushNamed(context, LoginPage.routeName);
                   }
                 }
               },
@@ -84,8 +84,9 @@ class _SignupFormState extends State<SignupForm> {
         suffixIcon: Padding(
           padding: EdgeInsets.only(right: 25.0),
           child: Icon(Icons.lock_outline),
-        )
+        ),
       ),
+      obscureText: true,
       onChanged: (value) {
         if (password == confirmPassword && value.isNotEmpty) {
           removeError(error: kPasswordNullError);
@@ -117,6 +118,7 @@ class _SignupFormState extends State<SignupForm> {
           child: Icon(Icons.lock_outline),
         )
       ),
+      obscureText: true,
       onChanged: (value) {
         if (value.isNotEmpty) {
           removeError(error: kPasswordNullError);
